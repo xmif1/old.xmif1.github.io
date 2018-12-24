@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Garamond;
+}
+
+.content {
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e0e0e0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #999999;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #999999;
+  color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a class="active" href="#mathblog">Math Blog</a>
+  <a href="calendar.html">Calendar</a>
+  <a href="others.html">Others</a>
+  <a href="https://github.com/xmif1/" target="_blank">GitHub</a>
+  <a href="https://www.flickr.com/photos/134709580@N05/" target="_blank">Flickr</a>
+</div>
+
+<div class="content_left">
+  <p>Directory: </p>
+  <ul>
+    <li> <a href="#adinfinitum">At odds with <i>ad infinitum</i></a></li>
+  </ul>
+  <hr>
+  <hr>
+</div>
+
+<div class="content">
+  <a name="adinfinitum"></a>
+  <h1><b>At odds with <i>ad infinitum</i></b></h1>
+  <p>24th December 2018</p>
+</div>
+
+<div class="content">
+  <p>
+    <b>1. Introduction</b>
+  </p>
+
+  <p align="justify">
+    The aim of this post is not to understand infinity - rather, it is to demonstrate
+    the oddities and pure weirdness that arises from this concept. The Latin term
+    <i>ad infinitum</i> translates to <i>to infinity</i>, which is commonly
+    used in mathematics when describing sequences, summations, etc... that tend to
+    infinity. We demonstrate the concept with a simple example, which almost everyone
+    has probably encountered at some point during their formal education.
+  </p>
+
+  <p align="justify">
+   To say that a number sequence is recurring is to say that it repeats indefinitely -
+   <i>ad infinitum</i>. So, what is zero point nine recurring - $0.\bar{9}$? At any
+   given decimal place, the integer 9 is to be found. We can express this formally as a
+   summation, $$0.\bar{9} = 0.9 + 0.09 + 0.009 + ... = \sum\limits_{i=1}^{\infty} \dfrac{9}{10^i}$$
+  </p>
+
+  <p align="justify">
+   It can be challenging at first to see that this in-fact is simply the integer 1 in
+   disguise. When one first encounters this statement, the first thought is typically
+   how can this be, imagining that they can take the difference between 1 and <i>a very large <b>but</b> finite</i>
+   number of decimal places with the integer 9. This - in a sense - is correct: One
+   can take more decimal places then there are particles in the Universe, as long as
+    the number of decimal places taken is finite, then the result would not be 1.
+  </p>
+
+  <p align="justify">
+    However, truly, this notion is incorrect. There is the underlying assumption of
+    the finite condition, when in fact we are saying that 9 must repeat indefinitely.
+    This, on a side note, demonstrates the importance of logic in mathematics.
+    Providing a proof that $0.\bar{9} = 1$ is a simple exercise in algebra:
+    $$\begin{align*}
+    x &= 0.\bar{9}\\
+    10x &= 9.\bar{9} = 9 + 0.\bar{9} = 9 + x\\
+    9x &= 9\\
+    x &= 1 \hspace{5mm} \square
+    \end{align*}$$
+  </p>
+
+  <p align="justify">
+    The above proof makes a seemingly bewildering concept seem trivial, through
+    the use of symbolic notation (a process of high level abstraction). So, does
+    one now understand what happens <i>ad infinitum</i>? Foolish is one who thinks
+    so - we are always at odds with the concept of <i>ad infinitum</i>!
+  </p>
+
+  <p>
+    <b>2. Not One-of-a-Kind</b>
+  </p>
+
+  <p align="justify">
+    We call the set of positive integers, starting from 1, then 2, 3, etc... as
+    the <i>set</i> of <i>natural numbers</i>. Abstractly, a set is a collection
+    of objects without repetitions and in which ordering is not important. We refer
+    to the size of a set as its <i>cardinality</i>. For any natural number that
+    one can think of, the integer 1 can always be summed to it, defining a new and
+    larger natural number. For this concept, in everyday language we typically say
+    that <i>there is an infinite number of natural numbers</i>.
+  </p>
+
+  <p align="justify">
+    More formally however, we say that there is a <i>countably</i>-infinite number
+    of natural numbers. We thus say that the cardinality of the natural numbers
+    is countably infinite. The reason being that, we can always start from 1
+    and start counting our way up - granted, one will never stop counting - but
+    nonetheless, one is still counting. Counting <i>ad infinitum</i>!
+  </p>
+
+  <p align="justify">
+    Consider the odd and even numbers. If $n$ is a natural number, an odd number
+    can be generated by writing $2n - 1$ and an even number can be generated by
+    writing $2n$. These are informal examples of <i>functions</i>, mapping between
+    the naturals and the odd/even numbers. We note that, the natural numbers in
+    fact consist alternating odd and even numbers. Thus, at first, one may think
+    that the cardinality of the set of odd numbers is half the cardinality of the
+    set of natural numbers in its entirety. Similarly for the set of even numbers.
+    However, it is easy to show that in fact the cardinality of the set of odds and
+    the set of evens is <i>countably infinite</i> for both, the same as the
+    cardinality of the set of naturals.
+  </p>
+
+  <p align="justify">
+    Consider for example the function that generates the odd numbers: for every
+    unique natural number one inputs, a unique odd number is generated. There is
+    a one-to-one correspondence between the odds and the naturals, counting the
+    odds is equivalent to counting the naturals. The table below illustrates this process,
+    $$\begin{array}{c|c}
+		\text{Naturals} & \text{Generated Odds} \\ \hline \hline
+		1 & 1\\
+		2 & 3\\
+		3 & 5\\
+		\vdots & \vdots\\
+		n & 2n - 1\\
+		\vdots & \vdots
+	\end{array}$$
+  </p>
+
+  <p align="justify">
+    A similar correspondence exists for the even numbers, through the one-to-one
+    association of the function that generates the evens with the natural numbers.
+    The result is, to say the least, counter-intuitive. This is the first true
+    example of the weirdness that can occur <i>ad infinitum</i>.
+  </p>
+
+  <p align="justify">
+    We can think of a different kind of infinity - <i>uncountably infinite</i>.
+    Take for example all the numbers between 0 and 1 - how many are there? Can one
+    count them? The answer is no - not only is there an infinite number, but a
+    countably infinite number. To demonstrate this, we shall use an ingenious
+    argument known as <i>Cantor's Diagonal Argument</i>. Suppose that there is an
+    association between the natural numbers and the numbers between 0 and 1, in a unique manner.
+    In other words, suppose that there are countably infinite numbers between 0 and 1.
+    We shall symbolically denote this association by $f$, short for <i>function</i>.
+    For a given natural number $n$, $f(n)$ uniquely gives a number between 0 and 1.
+  </p>
+
+  <p align="justify">
+    Consider the decimal expansion of $f(n)$,
+    $$f(n) = 0.a_{n_1} a_{n_2} a_{n_3} ... a_{n_k}...$$
+    where the terms in $a$ are simply integers between 0 and 9.
+  </p>
+
+  <p align="justify">
+    Now consider :
+    $$\begin{array}{ccccccc}
+    f(1) = & 0. & \mathbf{a_{1_1}} & a_{1_2} & a_{1_3} & a_{1_4} & ... \\
+    f(2) = & 0. & a_{2_1} & \mathbf{a_{2_2}} & a_{2_3} & a_{2_4} & ... \\
+    f(3) = & 0. & a_{3_1} & a_{3_2} & \mathbf{a_{3_3}} & a_{3_4} & ... \\
+    f(4) = & 0. & a_{4_1} & a_{4_2} & a_{4_3} & \mathbf{a_{4_4}} & ... \\
+    \vdots & 0. & \vdots & \vdots & \vdots & \vdots \\
+    \end{array}$$
+  </p>
+
+  <p align="justify">
+    We now construct a number $y$ between 0 and 1, such that $y = 0.y_{1}y_{2}y_{3}y_{4}...$ is defined as :
+    $$y_{n} = \begin{cases}
+    1,& \text{if } a_{n_n} = 0\\
+    0,& \text{if } a_{n_n} \neq 0
+    \end{cases}$$
+  </p>
+
+  <p align="justify">
+    By construction, $y$ differs with respect to $f(1)$ in the first position,
+    differs with respect to $f(2)$ in the second position, differs with respect
+    to $f(n)$ in the $n$th position, etc...
+  </p>
+
+  <p align="justify">
+    Thus for any natural number $n$, $f(n)$ is not $y$ and thus $y$ is never counted
+    by $f$. This is a contradiction - thus an association $f$ which counts the
+    numbers between 0 and 1 cannot exist. Therefore, the cardinality of the set
+    of number between 0 and 1 is <i>uncountably infinite</i>.
+  </p>
+
+  <p>
+    <b>3. Tiling a Square with Squares</b>
+  </p>
+
+  <p align="justify">
+    Suppose that one is given a square of arbitrary side length $a$. We begin tiling
+    this square iteratively in the following manner: During the first iteration,
+    at each corner, place a square of length $\dfrac{a}{4}$. For the second iteration,
+    5 squares of length $\dfrac{a}{8}$ are tiled around each corner, i.e. a total of
+    20 smaller squares, and so on... this is illustrated in the diagram below.
+    <b>Is it possible to cover the square entirely in such a manner?</b>
+  </p>
+
+  <img src="images/tiling.png" width="400" height="400">
+
+  <p align="justify">
+    The interested may try to show that the area $A_n$ covered by these tiles at the
+    $n$th iteration is given by,
+    $$A_n = a^2 \sum\limits_{i=1}^n \dfrac{2^{i+3}-12}{4^{i+1}}$$
+  </p>
+
+  <p align="justify">
+    The expression above is simply included for completeness sake - anyone with
+    access to Wolfram's Mathematica software is encouraged to play around a bit with
+    this expression and evaluate it for different values of $n$. The table below gives
+    some sample outputs,
+    $$\begin{array}{c|l}
+		n & A_n \\ \hline \hline
+		1 & 0.25a^2\\
+		2 & 0.5625a^2\\
+		10 & 0.998048a^2
+	\end{array}$$
+  </p>
+
+  <p align="justify">
+    It becomes immediately apparent that even for small values of $n$, the tiling
+    practically covers the entire area of the square. However, for any finite number
+    of iterations $n$, $A_n < a^2$ still. One can imagine that an incredibly thin cross
+    remains untiled about the centre of the square. Yet, if one carries on tiling
+    indefinitely, as $n\to\infty$, $A_n = a^2$.
+  </p>
+
+  <p align="justify">
+    This is yet another seemingly counter-intuitive result: it is only if one tiles indefinitely
+    that one can cover the entire surface area of the square, otherwise some area (even
+    if infinitesimally small) remains untiled.
+  </p>
+
+</div>
+
+</body>
+
+</html>
