@@ -27,6 +27,12 @@ body {
     text-align: center;
 }
 
+.content_left {
+    max-width: 960px;
+    margin: auto;
+    text-align: left;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #e0e0e0;
@@ -73,6 +79,7 @@ body {
   <p>Directory: </p>
   <ul>
     <li> <a href="#adinfinitum">At odds with <i>ad infinitum</i></a></li>
+    <li> <a href="#logic1">Logic - Part 1: Solving Ambiguity in Language</a></li>
   </ul>
   <hr>
   <hr>
@@ -290,6 +297,154 @@ body {
     if infinitesimally small) remains untiled.
   </p>
 
+</div>
+
+<div class="content">
+  <a name="logic1"></a>
+  <h1><b>Logic - Part 1: Solving Ambiguity in Language</b></h1>
+  <p>8th January 2019</p>
+</div>
+
+<div class="content">
+  <p>
+    <b>1. Ambiguity in Natural Languages</b>
+  </p>
+
+  <p align="justify">
+    When one looks at the development of natural languages, it becomes immediately apparent that
+    their development has taken an unstructured path, changing and developing with the times.
+    As a consequence, situations of ambiguity may arise. Such ambiguity may, for
+    example, contribute to the beauty of a piece of prose or poetry. However in
+    Mathematics, this can lead to confusion and inharmonious theories. A simple
+    example of ambiguity that may arise in day-to-day speech is the following:
+    "This old dog still has what it takes to learn new tricks!"
+  </p>
+
+  <p align="justify">
+    Someone more inclined towards the use of idioms in the English language, may
+    interpret the previous as referring to someone of old age, still with the capacity
+    to learn something new. Someone more inclined towards literal meaning however
+    may interpret the previous as referring to an old dog, learning new dog tricks.
+    No more, no less.
+  </p>
+
+  <p align="justify">
+    Logic provides a useful set of tools to aid in checking and resolving many instances
+    of ambiguity, while also looking at compound statements without a broader scope.
+    In other words, context is only dependent on what is already known, and free
+    of any externalities. It is for these reasons then that logic serves as an integral
+    part to the language of Mathematics. This use case is not exclusive to Mathematics
+    however: Logic in all its forms is nowadays used heavily in Computer Science,
+    and has been fundamental to the development of Philosophy since the times of Aristotle.
+  </p>
+
+  <p>
+    <b>2. Propositions and Statements: Introduction to Symbolic Representations</b>
+  </p>
+
+  <p align="justify">
+    Logic often involves the simplification of worded statements and arguments
+    into symbolic form. In order to understand this concept better, one must first
+    define the <i>elementary proposition</i>. Such a proposition defines a singular
+    fact, and its structure can be broken down into three components:
+  </p>
+
+</div>
+
+<div class="content_left">
+  <ul>
+    <li><b>Nominator</b>: a unique object, eg. <i>violoncello</i>.</li>
+    <li><b>Predicator</b>: a quality about said Nominator, eg. <i>in tune</i>.</li>
+    <li><b>Copula</b>: joins the nominator and predicator, eg. <i>is</i>.</li>
+  </ul>
+</div>
+
+<div class="content">
+
+  <p align="justify">
+    Thus an example elementary proposition would be: <i>The violoncello is in tune</i>.
+    Note that the Copula can be affirmative or negative. The previous example makes
+    use of a Copula in the affirmative sense. However, <i>the violoncello is not in tune</i>,
+    makes use of the Copula <i>is not</i>, which is in the negative sense. The collection
+    of elementary propositions together brings about the formulation of a <i>complex proposition</i>.
+  </p>
+
+  <p align="justify">
+    In a statement, elementary propositions are considered as <i>variables</i>. We
+    denote variables symbolically by using letters. Example, <i>the violoncello is in tune</i>
+    can be denoted in a statement by the letter $a$. However, it can can also be
+    represented by any other letter, just as long as each elementary proposition
+    in a statement has it’s own <i>unique</i> letter assigned to it, and not multiple,
+    different, elementary propositions assigned the same letter. Before one translates
+    a statement into symbolic form, it is important that one lists what each of the
+    variables used means.
+  </p>
+
+  <p align="justify">
+    For example, <i>either the sky is falling or I am out of my mind</i>, consists
+    of two elementary propositions. Let $a$ be <i>the sky is falling</i> and let $b$
+    be <i>I am out of my mind</i>. Symbolically, we have: either $a$ or $b$.
+  </p>
+
+  <p align="justify">
+    Notice then that, this provides a means of representing the logic behind a
+    statement, independent from the actual context in which is resides. If one is simply
+    told that either $a$ or $b$, one does not know if $a$ is talking about how
+    Dmitry has eccentric tendencies, or how Martha has a glistening smile. Similarly
+    for $b$.
+  </p>
+
+  <p align="justify">
+    In the next installment, an overview of <i>logical operators</i> shall be given,
+    completing our study of symbolic representations. Logical operators provide
+    are what link elemntary propositions, and are the crux to solving ambiguity
+    using a logical system. So for example, <i>either...or...</i> corresponds to
+    some particular logical operator, to be discussed in another article.
+  </p>
+
+  <p>
+    <b>3. A Brief Introduction To Truth Tables</b>
+  </p>
+
+  <p align="justify">
+    A variable (with reference to an elementary proposition) may be in one of either two
+    states: <b>True</b>, or <b>False</b>. As discussed, a statement typically has
+    multiple elementary propositions, and thus one ends up with multiple variables.
+    Since each variable has $2$ possible states, if a statement consists of $n$ variables,
+    then the number of state-combinations possible between these variables if $2^n$, i.e.
+    $2$ multiplied with itself for $n$ times. A simple combinatorial result!
+  </p>
+
+  <p align="justify">
+    Since elementary propositions in a statement are related (or better, <i>operated on</i>)
+    by logical operators, the output of these operators, for a particular combination of states,
+    give a True or False value to the entire statement. In other words, one would be able to deduce
+    if a statement is in fact True or False, independent of external context. This last point is
+    important - some statements deemed True by logic, may be utter nonsense in the 'real' world.
+    In this manner, this 'real' world is no more than uneccassary context.
+  </p>
+
+  <p align="justify">
+    Truth tables provide a simple means of listing all possible combinations, and
+    the resulting corresponding state of the statement. For some statment represented
+    using two variables, the number of combinations is four. These are listed below,
+    along with an example worked out statement in the rightmost column.
+    $$\begin{array}{cc||c}
+		\mathbf{a} & \mathbf{b} & \mathbf{a} \ \text{and} \ \mathbf{b}\\ \hline \hline
+		\text{True} & \text{True} & \text{True} \\
+    \text{True} & \text{False} & \text{False} \\
+    \text{False} & \text{False} & \text{False}\\
+    \text{False} & \text{False} & \text{False}
+	\end{array}$$
+  </p>
+
+  <p align="justify">
+  The truth table above describes how a logical operator representing the keyword
+  <i>and</i> in natural languages, operates between two variables to give an output.
+  Look at the truth table, along taking note of the values of the variables and the
+  corresponding output. Notice how the statement is true only when the all variables
+  are true.
+  </p>
 </div>
 
 </body>
