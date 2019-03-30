@@ -1,6 +1,13 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <style>
+    .content {
+        max-width: 960px;
+        margin: auto;
+        text-align: center;
+    }
+    </style>
     <script src="https://www.webglearth.com/v2/api.js"></script>
     <script>
       function initialize() {
@@ -9,9 +16,13 @@
         var base = WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
           attribution: '© OpenStreetMap contributors'
         }).addTo(earth);
+
+        var marker = WE.marker([51.5, -0.09]).addTo(earth);
+          marker.bindPopup("<center><p><a class=\"fancybox\"  href=\"me.jpg\">Xandru Mifsud<\/a> </p><p><img src=\"me.jpg\" width=\"150\" height=\"150\"></p></center>", {maxWidth: 150, closeButton: true});
+
       }
     </script>
-  <title>WebGL Earth API: Custom Tiles</title>
+  <title>Moon for all Mankind</title>
   </head>
   <body onload="initialize()">
     <div id="earth_div"></div>
